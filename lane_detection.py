@@ -47,7 +47,6 @@ def get_slopes_intercepts(lines, screen_height): #only X-intercept
 
         slopes.append(slope)
         xInts.append(xInt)
-        print(xInts)
 
     return (slopes, xInts)
 

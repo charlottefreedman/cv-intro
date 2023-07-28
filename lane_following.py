@@ -24,7 +24,6 @@ def get_center_line(center, slope, screen_height):
     if slope == 0:
         return [0,0,0, 0, 0, 0]
     topX = ((-1 * screen_height) + slope * center)/slope
-    print(slope)
     return [0,0,topX, 0, center, screen_height]
 
 def draw_center(img, line):
