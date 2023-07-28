@@ -23,9 +23,9 @@ def get_lane_center(lane):
 def get_center_line(center, slope, screen_height):
     if slope == 0:
         return [0,0,0, 0, 0, 0]
-    topX = (-1080 + slope * center)/slope
+    topX = ((-1 * screen_height) + slope * center)/slope
     print(slope)
-    return [0,0,topX, 0, center, 1080]
+    return [0,0,topX, 0, center, screen_height]
 
 def draw_center(img, line):
     temp_img = img
